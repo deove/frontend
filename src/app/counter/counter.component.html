@@ -1,11 +1,26 @@
 <mat-card class="example-card" *ngIf="value">
+
   <mat-card-header>
-    <h1>counter {{position}} {{value.name}}</h1>
-  </mat-card-header>
-  <mat-card-content>
-    <p>{{value.value}}</p>
-  </mat-card-content>
-  <mat-card-actions>
-    <button (click)="increment()">incrementer</button>
-  </mat-card-actions>
-</mat-card>
+
+      <div mat-card-avatar class="example-header-image"></div>
+
+      <mat-card-title>Value of {{ title }}{{ position +1}}: </mat-card-title>
+
+    </mat-card-header>
+
+    <button (click)="increment()">Increment</button>
+
+    <mat-card-content>
+
+      <p>
+
+        {{value.value}}
+
+      </p>
+
+    </mat-card-content>
+
+
+
+  </mat-card>
+
